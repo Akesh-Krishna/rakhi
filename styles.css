@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500;700&family=Roboto:wght@500&display=swap');
+ 
+h1{
+    font-family: 'Brush Script MT';
+    font-size:  4rem;
+    font-weight: 1;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+   
+   
+}
+ 
+ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+    background: rgba(63, 81, 181) !important;
+    font-family: 'Roboto', sans-serif;
+      /*border: 2px solid #ffffffa6 !important;*/
+    background-size: cover;
+    color: #fff;
+}
+ 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+ 
+.content {
+    text-align: center;
+}
+ 
+.buttons button {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ 
+.buttons button:hover {
+    background-color: #ff4500;
+}
+ 
+.message {
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Brush Script MT';
+    white-space: normal;
+    z-index: 0;
+    left: 30px;
+    bottom: 150px;
+}
+ 
+.gifts {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Brush Script MT';
+    font-size: 25px;
+}
+
+.gift-box {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px; /* Spacing between text and gift boxes */
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.gift-box:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.gift-box.revealed {
+    background-color: #d3d3d3;
+}
+
+.gift-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Keep the rounded corners */
+}
+
+
+ 
+#svg-spinner{
+    -webkit-transition-property: -webkit-transform;
+    /* -webkit-transition-duration: 30s; */
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+   
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 30s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+   
+    transition-property: transform;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+ 
+  @-webkit-keyframes rotate {
+      from {-webkit-transform: rotate(0deg);}
+      to {-webkit-transform: rotate(360deg);}
+  }
+ 
+  @-moz-keyframes rotate {
+      from {-moz-transform: rotate(0deg);}
+      to {-moz-transform: rotate(360deg);}
+  }
+ 
+  @keyframes rotate {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+ 
+ 
+   
+  /*spinner positioning */
+  #html-spinner, #svg-spinner{
+    position:absolute;
+    top:16%;
+   
+    width: 35%;
+    z-index: 0;
+    right: 50px;
+  }
+ 
